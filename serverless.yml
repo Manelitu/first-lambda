@@ -12,4 +12,9 @@ functions:
   index:
     handler: index.handler
     description: first lambda example function
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
       
