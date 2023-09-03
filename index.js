@@ -1,3 +1,6 @@
-export function handler () {
-  return {}
+export function handler (event, context) {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: 'My first lambda' })
+  }
 }
